@@ -1,0 +1,890 @@
+/*************************************************| Monitoring Default CSS Style |******************************************************************
+Theme Name:      monitoring
+Company Website:
+Description:     New Design of monitoring | All Rights Reserved 2017
+Author:          Marat Raimberdievich
+Version:         1.0
+Tags:
+
+************************************* | Default Browsers' Attrib Reseting & Main Styling |*********************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background:#0d0f1a url(../images/mainbg.jpg);
+    line-height: 1;
+}
+
+form {
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: "SegoeUI";
+    display:table;
+    font-size: 16px;
+    color: #fff;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0 !important;
+}
+a:link, a:visited {
+	color:#1e3685;
+	text-decoration:none;
+}
+a:hover, a:active {
+    cursor: pointer;
+    text-decoration:none !important;
+    color:#395ccd;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ul, ol, li, div, span, h1, h2, h3, h4, h5, label, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+dl, ol, ul {
+	margin-bottom:0 !important;
+}
+fieldset, img {
+    border: none;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI-Light.eot');
+    src: url('../fonts/SegoeUI-Light.eot#iefix') format('embedded-opentype'),
+         url('../fonts/SegoeUI-Light.woff') format('woff'),
+         url('../fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot#iefix') format('embedded-opentype'),
+         url('../fonts/SegoeUI.woff') format('woff'),
+         url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI-Semibold.eot');
+    src: url('../fonts/SegoeUI-Semibold.eot#iefix') format('embedded-opentype'),
+         url('../fonts/SegoeUI-Semibold.woff') format('woff'),
+         url('../fonts/SegoeUI-Semibold.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI-Bold.eot');
+    src: url('../fonts/SegoeUI-Bold.eot#iefix') format('embedded-opentype'),
+         url('../fonts/SegoeUI-Bold.woff') format('woff'),
+         url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI-Black.eot');
+    src: url('../fonts/SegoeUI-Black.eot#iefix') format('embedded-opentype'),
+         url('../fonts/SegoeUI-Black.woff') format('woff'),
+         url('../fonts/SegoeUI-Black.ttf') format('truetype');
+    font-weight: 700;
+}
+/* * {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+} */
+.responsive {
+    width:96%;
+    margin:30px auto 30px;
+}
+/****************************************| All Input Fields Auto Styling (Without assign ID or Class) |***************************************/
+
+.header {
+  height:80px;
+  position:relative;
+  background:#131625;
+  border:1px solid #344d92;
+}
+.content {
+    padding:45px 35px 30px 35px;
+    background:#131625;
+    border-left:1px solid #344d92;
+    border-right:1px solid #344d92;
+}
+.header .col-5:first-child .gos-name{
+  justify-content: flex-end;
+  padding-left: 40px;
+}
+.header .col-5:last-child .gos-name{
+  padding-right: 40px;
+}
+.header .gos-name {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size:20px;
+  color: #bababd;
+  font-weight: 300;
+  width: 100%;
+  justify-content: flex-start;
+}
+.power {
+  border-left: 29px solid #273766;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+}
+.power i, .exit i {
+  color:#03dbf7;
+  position: relative;
+  font-size: 14px;
+}
+.power i {
+  top: 12px;
+  left: -23px;
+}
+.exit i {
+  top:12px;
+  right:-9px;
+}
+.exit {
+  cursor:pointer;
+  border-right: 29px solid #273766;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+}
+.main-logo {
+  position: relative;
+}
+.main-logo-bottom {
+  bottom: -11px;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  border-bottom: 1px solid #344d92;
+  border-left: 1px solid #344d92;
+  border-right: 1px solid #344d92;
+  margin:auto;
+  left:0;
+  right:0;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 91% 100%, 9% 100%);
+  clip-path: polygon(0 0, 100% 0%, 91% 100%, 9% 100%);
+  background: #131625;
+}
+.bottom-copyright .bottom-copyright-left, .bottom-copyright .bottom-copyright-right{
+    background: #131625;
+}
+.bottom-copyright .bottom-copyright-left {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+    background: #131625;
+    border-left:1px solid #344d92;
+    position: relative;
+    border-bottom:1px solid #344d92;
+}
+.bottom-copyright .bottom-copyright-left:after{
+    height: 1px;
+    display: block;
+    width: 40px;
+    background: #344d92;
+    transform: rotate(-39deg);;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -19px;
+}
+.bottom-copyright .bottom-copyright-right {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+    background: #131625;
+    border-right:1px solid #344d92;
+    border-bottom:1px solid #344d92;
+}
+.bottom-copyright .bottom-copyright-right:before{
+    height: 1px;
+    display: block;
+    width: 40px;
+    background: #344d92;
+    transform: rotate(39deg);
+    content: '';
+    position: relative;
+    top: 0px;
+    left: -19px;
+}
+.bottom-copyright .copyrighted {
+    border-top:1px solid #344d92;
+    height:13px;
+    position: relative;
+}
+.bottom-copyright .copyrighted .copyright-text {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 6px;
+    color:#7d7d7d;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+.main-logo .logo{
+  background:url(../images/main-logo.png) no-repeat center center;
+  width:67px;
+  margin:8px auto 0;
+  height:67px;
+}
+.main-logo-bottom::before {
+  height: 1px;
+  display: block;
+  width: 28px;
+  background: #344d92;
+  transform: rotate(45deg);
+  content: '';
+  position: relative;
+  top: 0px;
+  left: -14px;
+}
+.main-logo-bottom::after {
+  height: 1px;
+  display: block;
+  width: 30px;
+  background: #344d92;
+  transform: rotate(-45deg);
+  content: '';
+  position: relative;
+  top: 0px;
+  left: 103px;
+}
+.minfin-ostatok, .tamozhnyi-soyuz, .minfin-profit-deficit {
+  border:1px solid #344d92;
+}
+.minfin-ost-header {
+  height:44px;
+  background:#273766;
+}
+.minfin-ost-header .ost-title, .minfin-ost-header .ost-date p{
+  height:44px;
+  line-height:41px;
+  text-transform: uppercase;
+}
+.minfin-ost-header .ost-title {
+  text-indent:2.5%;
+  color:#bfc2cc;
+  font-size:16px;
+}
+.minfin-ost-header .ost-date {
+  text-align: center;
+}
+.minfin-ost-header .ost-date p{
+  font-size:14px;
+  color:#bfc2cc;
+}
+.minfin-ost-header .ost-date p span {
+  color:#fff;
+  padding-right:10px;
+}
+.minginostchart {
+  height:232px;
+}
+.minfinost-bottom {
+  border-top:1px solid #273766;
+  padding:15px;
+}
+.minfinost-bottom p span{
+  font-size:14px;
+  color:#a7a7aa;
+  padding-bottom:5px;
+  display:block;
+}
+.minfinost-bottom p {
+  font-size:20px;
+  font-weight:300;
+}
+.minfin-dohros, .mingin-top-3, .ras-by-functions {
+  margin-top:35px;
+}
+.minfin-dohros .dohros-header, .mingin-top-3 .mingin-top-header, .gosdolg .mingin-top-header, .minfin-profit-deficit .mingin-prodef-header, .ras-by-functions .rasbyfunc-header, .tamozhnyi-soyuz .tamozhnyi-header{
+  background:#2a3863;
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  font-size:16px;
+  color:#bdc0ca;
+  line-height: 29px;
+  text-indent: 12px;
+  height:32px;
+}
+.minfin-dohros .dohros-header > span{
+  text-indent: 0;
+  padding-right: 10px;
+}
+.minfin-dohros .dohros-header p span {
+  padding-left: 5px;
+  color:#f2d06b;
+ }
+ .gosdolg .mingin-top-header, .minfin-profit-deficit .mingin-prodef-header, .tamozhnyi-soyuz .tamozhnyi-header {
+   font-size:14px;
+   padding-right: 12px;
+ }
+.minfin-dohros .dohros {
+  padding:8px 10px;
+  font-size:24px;
+  background:#1f2230;
+}
+.minfin-dohros .dohros.doh {
+  color:#bcbdc1;
+  border-bottom:1px solid #131625;
+}
+.minfin-dohros .dohros.doh.notax {
+  padding:8px 10px;
+  min-height: 81px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom:0;
+justify-content: left;
+}
+.minfin-dohros .dohros.ros{
+  color:#b39c59;
+}
+.minfin-dohros .dohros.bottom{
+  color:#2d89ad;
+  font-size:16px;
+}
+.minfin-dohros span.boh-bottom{
+  display:block;
+  padding:8px 10px;
+  color:#abacaf;
+  text-transform: uppercase;
+  background:#2a2d3b;
+  font-size:10px;
+}
+.mingin-top-3 p {
+  display:flex;
+  flex-direction: column;
+  font-size:14px;
+  color:#bcbcbe;
+  width:100%;
+}
+.mingin-top-3 .montoring-container .monitoring-content.konkrus {
+  height:150px;  
+}
+.mingin-top-3 .montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkursSums p {
+  display:flex;
+  flex-direction: row;  
+  align-items: center;
+}
+.mingin-top-3 .montoring-container{
+  margin-top:0;
+}
+.mingin-top-3 .montoring-container .monitoring-content.konkrus .carousel-caption {
+  height:150px;
+}
+.mingin-top-3 .montoring-container .monitoring-content.konkrus .carousel-inner .carousel-item {
+  height:150px;
+}
+.mingin-top-3 .payers p:last-child, .mingin-top-3 .reciepts p:last-child{
+  border-bottom:0;
+}
+.mingin-top-3 .payers p span {
+  color:#0cb2ca;
+}
+.mingin-top-3 .reciepts p span {
+  color:#cd5f5d;
+}
+.gosdolg .minfin-top-dohros {
+  line-height: 75px;
+  font-size: 40px;
+  color: #b9babe;
+  text-indent: 10px;
+  font-weight:300;
+}
+.gosdolg .minfin-top-dohros span {
+  font-size: 12px;
+  position: relative;
+  top: -20px;
+  color:#f74040;
+}
+.gosdolg .ex-dolg {
+  background:#1f2230;
+  height:22px;
+  font-size:11px;
+  display:flex;
+  color:#bcbcbe;
+  line-height:21px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding:0 7px;
+}
+.gosdolg .ex-dolg span{
+  text-transform: lowercase;
+  position:relative;
+  top:-1px;
+}
+.gosdolg .col-6 > span {
+  color:#bcbcbe;
+  text-indent:7px;
+  font-size:24px;
+  font-weight: 300;
+  line-height:56px;
+  display:block;
+}
+.minfin-profit-deficit {
+  height:151px;
+ }
+.ras-by-func-content .progress {
+  position:relative;
+  height:32px;
+  border-radius: 0;
+  margin-top:10px;
+  background-color: #1f2230;
+}
+.ras-by-func-content .progress:first-child{
+    margin-top:21px;
+}
+.ras-by-func-content .progress .progress-bar {
+  text-align: left;
+  background: #2a2a49;
+}
+.ras-by-func-content .progress .ras-prog-content p span {
+  width:39px;
+  height:32px;
+  margin-right:12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #353552;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries {
+  margin:25px 10px 5px;
+  border:1px solid #2a2d3b;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhnyi-countries-header {
+  background: #2a2d3b;
+  text-align: center;
+  margin-bottom:7px;
+  text-transform: uppercase;
+  padding:7px 0 9px;
+  font-size:12px;
+  color:#bdbec1;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag{
+  position: absolute;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag ul{
+  display: flex;
+  flex-direction: column;
+  width:8px;
+  height:50px;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag ul li{
+  width:8px;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag li {
+    height:100%;
+ }
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kg li:nth-child(1) {
+  background:#7e1329;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kg li:nth-child(2) {
+  background:#896e18;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kg li:nth-child(3) {
+  background:#7e1329;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ru li:nth-child(1) {
+  background:#898b92;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ru li:nth-child(2) {
+  background:#092866;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ru li:nth-child(3) {
+  background:#742121;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kz li:nth-child(1) {
+  background:#096378;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kz li:nth-child(2) {
+  background:#896e18;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.kz li:nth-child(3) {
+  background:#096378;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.by li:nth-child(1) {
+  background:#6e2432;
+  height:66%;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.by li:nth-child(2) {
+  background:#2f5e3e;
+  height:34%;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ar li:nth-child(1) {
+  background:#760b1b;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ar li:nth-child(2) {
+  background:#092563;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress-flag.ar li:nth-child(3) {
+  background:#835f12;
+}
+.tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress{
+  margin-left: 20px;
+  display: flex;  
+}
+.tamozhnyi-soyuz .tamozhyi-block{
+  padding:12px 10px;
+  position: relative;
+}
+.tamozhnyi-soyuz .tamozhyi-block > p{
+  font-size:12px;
+  text-indent: 20px;
+  text-transform: uppercase;
+  padding-bottom:7px;
+  color:#bababd;
+}
+.tamozhnyi-soyuz .tamozhnyi-header-bottom {
+  background: #2a2d3b;
+  text-align: center;
+  padding:8px 0;
+  text-transform: uppercase;
+  font-size:12px;
+  color:#bdbec1;
+}
+.tamozhnyi-soyuz .tamozhnyi-total .progress:first-child {
+  background:#25234a;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-total .progress:nth-child(2){
+  background:#192b4b;
+}
+.tamozhnyi-soyuz .tamozhnyi-total .progress:first-child .progress-bar{
+  background-color:#433985;
+  border-right: 3px solid #5949b1;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-total .progress:nth-child(2) .progress-bar{
+  background-color:#224d87;
+  border-right: 3px solid #2967b4;
+ }
+.tamozhnyi-soyuz .tamozhnyi-total .progress{
+  height:50px;
+  border-radius: 0;
+  margin-top:15px;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-total .progress .progress-bar span{
+  font-size:20px;
+  text-align: left;
+  text-indent: 10px;
+  font-weight: 300;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-countries .tamozhyi-block .progress:last-child {
+  margin-top:8px;
+ }
+ .tamozhnyi-soyuz .tamozhnyi-countries hr {
+   border-top:1px solid #2a2d3b;
+   margin-top:10px;
+   margin-bottom:5px;
+ }
+.tamozhnyi-soyuz .tamozhnyi-total {
+  margin:30px 10px;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress {
+  height:21px;
+  position: relative;
+  border-radius: 0;
+  background:#1f2230;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress:nth-of-type(2) .progress-bar {
+  background: #433985;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress:nth-of-type(2) {
+  background: #25234a;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress .progress-bar {
+  background: #223553;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress:nth-of-type(3) .progress-bar {
+  background: #224d87;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress:nth-of-type(3) {
+  background: #192b4b;
+}
+.tamozhnyi-soyuz .tamozhyi-block .progress .progress-bar span{
+  position: absolute;
+  left:4px;
+  font-size:16px;
+  color:#d3d1df;
+  top:2px;
+}
+.tamozhnyi-bottom {
+  padding:10px 10px 16px;
+  display:flex;
+  flex-direction: row;
+}
+.tamozhnyi-bottom p:first-child {
+  margin-right:20px;
+}
+.tamozhnyi-bottom p {
+  display:flex;
+  color:#dededf;
+  flex-direction: row;
+  font-size:12px;
+}
+.tamozhnyi-bottom p span{
+  width:12px;
+  margin-right:8px;
+  position: relative;
+  top:1px;
+  height:12px;
+}
+.tamozhnyi-bottom p:nth-child(1) span{
+  background:#4f429d;
+}
+.tamozhnyi-bottom p:nth-child(2) span{
+  background:#265ca0;
+}
+#minfin-ostatok, #dgzFinished {
+    width: 100%;
+    height: 232px;
+    background-color: #131625;
+}
+g[aria-labelledby="id-47-title"]{
+    display:none !important;
+}
+g[aria-labelledby="id-1398-title"]{
+    display: none !important;
+}
+g[aria-labelledby="id-1598-title"]{
+    display: none !important;
+}
+g[aria-labelledby*="id-"][aria-labelledby*="-title"] {
+    display:none !important;
+}
+#minfin-profit-deficit{
+    height:117px;
+    width:100%;
+    background-color: #131625;
+}
+.montoring-container {
+  width:100%;
+  margin-top:35px;
+}
+.montoring-container .monitoring-header {
+  background: #2a3863;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #bdc0ca;
+  line-height: 29px;
+  text-indent: 12px;
+  height: 32px;
+}
+.montoring-container .monitoring-content {
+  position: relative;
+}
+.montoring-container .monitoring-content.konkrus{
+  height:176px;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption{
+  right: unset;
+  display:flex;
+  justify-content: space-between;
+  height:176px;
+  flex-direction: column;
+  position: relative;
+  left: unset;
+  text-align: left;
+  padding: 15px;
+  top: 0;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkurs {
+  display: flex;
+  flex-direction: column;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkursSums {
+  display: flex;
+  flex-direction: column;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkurs span{
+  font-size:11px;
+  color:#bbbdc3;
+  padding-bottom:3px;
+}
+.montoring-container .monitoring-content.konkrus .carousel-indicators {
+  bottom:unset;
+  top:-21px;
+  bottom: unset;
+  left: auto;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.montoring-container .monitoring-content.konkrus .carousel-inner .carousel-item{
+  height:176px;
+}
+.montoring-container .monitoring-content.konkrus .carousel-inner {
+  background:url(../images/dgz-konkurs-bg.jpg);
+}
+.dgz .ras-by-func-content .progress .progress-bar {
+  background: #1d2f3e;
+}
+.ras-by-func-content .progress .ras-prog-content > span{
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+.dgz .ras-by-func-content .progress .ras-prog-content p span {
+  background: #2c4355;
+  width: auto;
+  padding: 0 9px;
+}
+.montoring-container .monitoring-content.konkrus .carousel-indicators li {
+  width:9px;
+  height:9px;
+  border:1px solid #cfd1da;
+  background: transparent;
+}
+.montoring-container .monitoring-content.konkrus .carousel-indicators li.active {
+  background:#8b8161;
+  border:1px solid #8b8161;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkursSums p:first-child{
+  font-size:11px;
+  color:#bbbdc3;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkursSums p:nth-child(2){
+  font-size:46px;
+  font-weight: 300;
+  color:#f1ce63;
+}
+.montoring-container .monitoring-content.konkrus .carousel-caption .dgzKonkursSums p:nth-child(2) span {
+  font-size:30px;
+  color:#bbbdc3;
+  padding-left: 10px;
+}
+.montoring-container .monitoring-content.participant .participant-child {
+  background:#1f2230;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:10px;
+  border-bottom:1px solid #363945;
+}
+.montoring-container .monitoring-content.participant .participant-child p:first-child i{
+  font-size:25px;
+  color:#798a98;
+}
+.montoring-container .monitoring-content.participant .participant-child p:first-child span{
+  position: relative;
+  font-size:12px;
+  left:10px;
+  top:-3px;
+  color:#a2a2a7;
+  text-transform: uppercase;
+}
+.montoring-container .monitoring-content.participant .participant-child p:nth-child(2) {
+  font-size:27px;
+  color:#bcbcbe;
+  font-weight: 300; 
+}
+.montoring-container.dogovorCount {
+  margin-top:0;
+}
+.DogovorCounter {
+  height:160px;
+  display: flex;
+  width:100%;
+  font-size:85px;
+  color:#f1ce63;
+  align-items: center;
+  justify-content: center;
+  background:url(../images/dgzDogovorbg.jpg);
+}
+.dogovorCountTable thead th{
+  background: #1d2746;
+  color:#bbbdc3;
+  padding:10px 14px;
+}
+.dogovorCountTable tbody td{
+  padding:15px;
+  color:#bbbdc3;
+  font-weight: 400;
+  font-size: 13px;
+}
+.dogovorCountTable tbody td:first-child{
+  white-space: nowrap;
+  font-weight: 300;
+}
+.dogovorCountTable tbody td:last-child{
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 300;
+}
+.dogovorCountTable tbody tr:nth-child(odd) {
+  background: #1f2230;
+}
